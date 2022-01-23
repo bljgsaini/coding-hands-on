@@ -116,11 +116,7 @@ dist
 .pnp.*
 
 .idea
-
 coding-practice.iml
-
 .DS_Store
-
 bin
-
 out
