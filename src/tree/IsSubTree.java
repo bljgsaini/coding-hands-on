@@ -7,25 +7,22 @@ public class IsSubTree {
 
 	}
 
-	boolean isSumTree(Node root)
+	boolean isSumTree(TreeNode root)
 	{
              if(root == null) return true;
             
-            if(root.data*2 == treeSum(root)){
+            if(root.val*2 == treeSum(root)){
                 return true;
             }
             return false;
              
 	}
 	
-	int treeSum(Node root)
+	int treeSum(TreeNode root)
 	{
-             if(root == null) return 0;
-             
-             if(root.left ==null && root.right == null) return root.data;
-            
-            
-            return root.data + treeSum(root.left) + treeSum(root.right);
+	    if(root == null) return 0;
+	    if(root.left ==null && root.right == null) return root.val;
+	    return root.val + treeSum(root.left) + treeSum(root.right);
              
 	}
 	

@@ -10,12 +10,12 @@ public class BoundryTraversal {
 
 	}
 	
-	ArrayList <Integer> printBoundary(Node node)
+	ArrayList <Integer> printBoundary(TreeNode node)
 	{
 	   
 	    ArrayList<Integer> ans = new ArrayList<>();
 	    if(node == null ) return ans;
-	    ans.add(node.data);
+	    ans.add(node.val);
 	    //PRINT LEFT BOUNDRY
 	    printLeftBoundry(node.left, ans);
         // PRINT LEAF BOUNDRY
@@ -27,15 +27,15 @@ public class BoundryTraversal {
 	    
 	}
 	
-	void printRightBoundry(Node node, ArrayList<Integer> ans){
+	void printRightBoundry(TreeNode node, ArrayList<Integer> ans){
 	    ArrayList<Integer> temp = new ArrayList<>();
 	    while(node != null){
 	        while(node.right!=null){
-	            temp.add(node.data);
+	            temp.add(node.val);
 	            node = node.right;
 	        }
 	        if(node.left != null){
-	            temp.add(node.data);
+	            temp.add(node.val);
 	        }
 	        node = node.left;
 	    }
@@ -45,22 +45,22 @@ public class BoundryTraversal {
 	    
 	}
 	
-	void printLeftBoundry(Node node, ArrayList<Integer> ans){
+	void printLeftBoundry(TreeNode node, ArrayList<Integer> ans){
 	    while(node != null){
 	        while(node.left!=null){
-	            ans.add(node.data);
+	            ans.add(node.val);
 	            node = node.left;
 	        }
 	        if(node.right != null){
-	            ans.add(node.data);
+	            ans.add(node.val);
 	        }
 	        node = node.right;
 	    }
 	}
 	
-	void printLeaf(Node node, ArrayList<Integer> ans){
+	void printLeaf(TreeNode node, ArrayList<Integer> ans){
 	    if(node == null ) return;
-	    if(node.left == null && node.right == null) ans.add(node.data);
+	    if(node.left == null && node.right == null) ans.add(node.val);
 	    printLeaf(node.left, ans);
 	    printLeaf(node.right, ans);
 	}
