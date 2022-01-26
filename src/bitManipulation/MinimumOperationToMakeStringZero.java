@@ -15,5 +15,4 @@ public class MinimumOperationToMakeStringZero {
         }
         return zero + one*2 -1;
     }
-
 }
