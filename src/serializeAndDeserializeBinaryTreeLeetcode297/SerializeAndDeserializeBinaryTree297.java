@@ -1,4 +1,6 @@
-package tree;
+package serializeAndDeserializeBinaryTreeLeetcode297;
+
+import tree.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;
