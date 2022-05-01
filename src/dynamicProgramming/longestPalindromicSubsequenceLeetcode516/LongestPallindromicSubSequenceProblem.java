@@ -1,4 +1,4 @@
-package dynamicProgramming;
+package dynamicProgramming.longestPalindromicSubsequenceLeetcode516;
 
 public class LongestPallindromicSubSequenceProblem {
 

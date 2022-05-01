@@ -1,4 +1,4 @@
-package strings;
+package string;
 
 //242. Valid Anagram
 public class ValidAnagram {
