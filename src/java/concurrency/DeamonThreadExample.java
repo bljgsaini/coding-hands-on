@@ -1,4 +1,4 @@
-package javaPractice.concurrency;
+package java.concurrency;
 
 public class DeamonThreadExample {
 

@@ -1,4 +1,4 @@
-package javaPractice.concurrency;
+package java.concurrency;
 
 import java.util.ArrayList;
 import java.util.Collections;

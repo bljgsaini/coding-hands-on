@@ -1,4 +1,4 @@
-package javaPractice.serializable.example2;
+package java.serializable.example2;
 
 public class Address {
     int homeNo;

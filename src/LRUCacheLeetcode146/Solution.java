@@ -18,57 +18,47 @@ public class Solution {
 
 class LRUCache {
 
-    Map<Integer, Integer> map;
     Map<Integer, Node> nodeMap;
     DoublyLinkedList doublyLinkedList;
-    int count;
     int capacity;
 
 
     public LRUCache(int capacity) {
-        map = new HashMap();
         nodeMap = new HashMap();
         doublyLinkedList = new DoublyLinkedList();
-        count = 0;
         this.capacity = capacity;
     }
 
     public int get(int key) {
-        if(map.containsKey(key)){
+        if(nodeMap.containsKey(key)){
             Node node = nodeMap.get(key);
             doublyLinkedList.removeGiven(node);
             doublyLinkedList.addFirst(node);
-            nodeMap.put(key, node);
-            return map.get(key);
+            return node.val;
         }
         return -1;
     }
 
     public void put(int key, int value) {
-        if(map.getOrDefault(key, -1) != -1){
+        if(nodeMap.containsKey(key)){
             Node node = nodeMap.get(key);
+            node.val = value;
             doublyLinkedList.removeGiven(node);
             doublyLinkedList.addFirst(node);
-            nodeMap.put(key, node);
         }else{
-            if(count == capacity){
-                int num = doublyLinkedList.getTail().val;
+            if(nodeMap.size() == capacity){
+                Node node = doublyLinkedList.getTail();
                 doublyLinkedList.removeLast();
-                nodeMap.remove(num);
-                map.remove(num);
-            }else{
-                count++;
+                nodeMap.remove(node.key);
             }
-            Node node = new Node(key);
+            Node node = new Node(key, value);
             doublyLinkedList.addFirst(node);
             nodeMap.put(key, node);
         }
-        map.put(key, value);
-
     }
 
-}
 
+}
 
 class DoublyLinkedList{
 
@@ -128,9 +118,11 @@ class DoublyLinkedList{
 
 class Node{
     int val;
+    int key;
     Node prev;
     Node next;
-    public Node(int val){
+    public Node(int key, int val){
+        this.key = key;
         this.val =val;
         this.prev = null;
         this.next = null;

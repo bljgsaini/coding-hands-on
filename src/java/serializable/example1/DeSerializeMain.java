@@ -1,4 +1,4 @@
-package javaPractice.serializable.example1;
+package java.serializable.example1;
 
 import java.io.FileInputStream;
 import java.io.IOException;

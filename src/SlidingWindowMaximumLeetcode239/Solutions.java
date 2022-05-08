@@ -18,13 +18,10 @@ public class Solutions {
         int []max = new int[nums.length - k + 1];
         int maxIndex = 0;
         while(j < nums.length){
-
             while(!deque.isEmpty() && deque.getLast() < nums[j]){
                 deque.removeLast();
             }
-
             deque.addLast(nums[j]);
-
             if(j-i+1 == k){
                 max[maxIndex++] = deque.getFirst();
                 if(nums[i] == deque.getFirst()){
@@ -32,11 +29,8 @@ public class Solutions {
                 }
                 i++;
             }
-
             j++;
-
         }
-
         return max;
     }
 
