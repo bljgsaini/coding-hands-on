@@ -1,4 +1,4 @@
-package serializeAndDeserializeBinaryTreeLeetcode297;
+package designProblems.serializeAndDeserializeBinaryTreeLeetcode297;
 
 import tree.TreeNode;
 

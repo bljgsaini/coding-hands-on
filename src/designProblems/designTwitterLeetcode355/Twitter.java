@@ -1,4 +1,4 @@
-package systemDesign.designTwitterLeetcode355;
+package designProblems.designTwitterLeetcode355;
 
 import java.time.LocalDateTime;
 import java.util.*;

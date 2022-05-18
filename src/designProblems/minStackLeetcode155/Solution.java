@@ -1,4 +1,4 @@
-package minStackLeetcode155;
+package designProblems.minStackLeetcode155;
 
 //https://leetcode.com/problems/min-stack/
 public class Solution {
