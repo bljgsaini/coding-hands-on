@@ -1,4 +1,4 @@
-package SlidingWindowMaximumLeetcode239;
+package slidingWindowProblem.SlidingWindowMaximumLeetcode239;
 
 import java.util.ArrayDeque;
 import java.util.Comparator;

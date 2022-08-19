@@ -11,11 +11,8 @@ public class Solution {
 
     public TreeNode balanceBST(TreeNode root) {
         List<Integer> list = new ArrayList();
-
         inOrderTraversal(root, list);
-
         return constructBST(list, 0, list.size()-1);
-
     }
 
     public void inOrderTraversal(TreeNode root, List<Integer> list){
