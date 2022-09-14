@@ -1,4 +1,4 @@
-package designProblems.LRUCacheLeetcode146;
+package systemDesign.leetcodeProblems.LRUCacheLeetcode146;
 
 import java.util.HashMap;
 import java.util.Map;

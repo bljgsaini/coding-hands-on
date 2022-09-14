@@ -1,4 +1,4 @@
-package designProblems.maximumFrequencyStackLeetcode895;
+package systemDesign.leetcodeProblems.maximumFrequencyStackLeetcode895;
 
 import java.util.*;
 

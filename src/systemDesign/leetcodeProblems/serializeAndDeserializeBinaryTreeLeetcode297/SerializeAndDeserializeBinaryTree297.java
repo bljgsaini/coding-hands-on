@@ -1,4 +1,4 @@
-package designProblems.serializeAndDeserializeBinaryTreeLeetcode297;
+package systemDesign.leetcodeProblems.serializeAndDeserializeBinaryTreeLeetcode297;
 
 import tree.TreeNode;
 
@@ -173,7 +173,7 @@ class Codec3 {
         if(root == null ) return null;
         Queue<TreeNode> q = new LinkedList<>();
         q.add(root);
-        String ans = "";
+        StringBuilder ans = new StringBuilder();
         while(!q.isEmpty()){
             int size = q.size();
             for(int i=0; i<size; i++){
@@ -185,10 +185,10 @@ class Codec3 {
                     q.add(node.right);
                 }
                 ch = " " + ch;
-                ans+= ch;
+                ans.append(ch);
             }
         }
-        return ans;
+        return ans.toString();
     }
 
     // Decodes your encoded data to tree.

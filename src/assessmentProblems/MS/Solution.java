@@ -1,8 +1,10 @@
-import java.util.Calendar;
+package assessmentProblems.MS;
+
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-public class Test2 {
+
+public class Solution {
 
     public static void main(String[] args) {
 //        String s = "abccbd";
@@ -22,6 +24,7 @@ public class Test2 {
 
     }
 
+    //https://www.google.com/amp/s/www.geeksforgeeks.org/remove-consecutive-duplicates-string/amp/
     public static int solve(String s, int [] cost){
         if(s == null || s.length() == 0 ) return 0;
         int ans = 0;
@@ -42,6 +45,7 @@ public class Test2 {
     }
 
 
+    //https://leetcode.com/discuss/interview-question/877070/Microsoft-Interview-Question
     public static int solve2(int [] nums1, int [] nums2){
         int firstSum = 0;
         for(int num : nums1) firstSum += num;
@@ -64,7 +68,7 @@ public class Test2 {
             minHeap.add(num);
         }
 
-        Comparator<Integer> comparator = (a,b)-> b-a;
+        Comparator<Integer> comparator = (a, b)-> b-a;
         PriorityQueue<Integer> maxHeap = new PriorityQueue<>(comparator);
         for(int num : nums2){
             maxHeap.add(num);
@@ -95,9 +99,6 @@ public class Test2 {
         }
 
         return -1;
-
     }
-
-
 
 }
