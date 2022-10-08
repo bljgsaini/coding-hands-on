@@ -1,4 +1,4 @@
-package java.concurrency;
+package javaPractice.concurrency;
 
 public class JoinExample {
 
