@@ -1,4 +1,4 @@
-package systemDesign.designPattern.singleton;
+package designPattern.creational.singleton;
 
 
 //The above implementation works fine in case of the single-threaded environment

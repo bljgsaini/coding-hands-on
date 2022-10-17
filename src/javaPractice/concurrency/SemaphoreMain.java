@@ -62,9 +62,6 @@ class BoundedArrayList {
         semaphore = new Semaphore(limit);
     }
 
-    /*
-     * Add element to the list and call semaphore.acquire method
-     * */
     public boolean add(Object t) throws InterruptedException {
         boolean added = false;
         semaphore.acquire();
@@ -78,9 +75,6 @@ class BoundedArrayList {
 
     }
 
-    /*
-     * remove element from the list and call semaphore.release method
-     * */
     public boolean remove(Object t) {
         boolean wasRemoved = arraylist.remove(t);
         if (wasRemoved)

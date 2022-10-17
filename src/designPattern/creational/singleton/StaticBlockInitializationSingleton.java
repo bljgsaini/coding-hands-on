@@ -1,4 +1,4 @@
-package systemDesign.designPattern.singleton;
+package designPattern.creational.singleton;
 
 //Both eager initialization and static block initialization creates the instance even before it’s being used and that is not the best practice to use.
 class StaticBlockInitializationSingleton {

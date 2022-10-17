@@ -1,4 +1,4 @@
-package systemDesign.designPattern.singleton;
+package designPattern.creational.singleton;
 
 /*Eager initialization
  if singleton class is not using a lot of resource this is the approach to use. Generally Singleton classes are used for database connection
