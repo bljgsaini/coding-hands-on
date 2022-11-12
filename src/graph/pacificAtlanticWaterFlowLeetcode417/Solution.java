@@ -43,7 +43,6 @@ class Solution {
         return ans;
     }
 
-
     public static void DFS(int i, int j, int grid[][], boolean[][]visited, int prevHeight){
         if(i<0 || j<0 || i>= grid.length || j>= grid[0].length || visited[i][j] || grid[i][j] < prevHeight)
             return;
