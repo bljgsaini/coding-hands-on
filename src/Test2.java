@@ -14,7 +14,6 @@ public class Test2 {
 
 //        int[] num1 = new int[]{2,3,1,1,2};
 //        int[] num2 = new int[]{5,4,6};
-
         int[] num1 = new int[]{5,4,1,2,6,5};
         int[] num2 = new int[]{2};
 
