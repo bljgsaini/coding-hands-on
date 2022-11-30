@@ -17,7 +17,6 @@ public class Test2 {
         int[] num1 = new int[]{5,4,1,2,6,5};
         int[] num2 = new int[]{2};
         System.out.println(solve2(num1, num2));
-
     }
 
     public static int solve(String s, int [] cost){
