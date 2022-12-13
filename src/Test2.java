@@ -90,11 +90,7 @@ public class Test2 {
                 return ans;
             }
         }
-
         return -1;
-
     }
-
-
 
 }
