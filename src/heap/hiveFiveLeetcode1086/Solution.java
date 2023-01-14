@@ -72,9 +72,7 @@ public class Solution {
             ans[i][1] = sum/5;
             i++;
         }
-
         return ans;
-
     }
 
 }
